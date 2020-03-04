@@ -2,51 +2,101 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Profile</title>
+	<title>Merapi</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
-	<nav class="navbar">
+<body>	
+	<div class="navbar">
+		<div class="container">
 		<div class="navbar-logo">
 			<img src="img/mountain.png" width="50px">
 		</div>
+		
 		<div class="navbar-menu">
 			<ul>
-				<li>About</li>
-				<li>Skill</li>
-				<li>Experiance</li>
+				<li><a  href="#main">Galeri</a></li>
 			</ul>
 		</div>
-	</nav>
-
-	<div class="hero">
-		<div class="hero-descrip">
-			<h3>Beautiful Of Merapi</h3>
-			<p>Mount Merapi is definitely an amazing sight to see. The volcano experienced a huge eruption last October and you can clearly see the destruction left by the ash and mud flows. The ground is covered in grey ash and mud and is surrounded by beautiful,
-			</p>
-			<a class="button" href="">View</a>
-		</div>
-		<div class="hero-image">
-			<img src="img/mount.png" width="200px">
 		</div>
 	</div>
-	<hr>
-
-	<content>
-		<div class="main">
-			<h2>My Explorer</h2>
+	<div class="navbar-space"></div>
+	<div class="container">
+		<div class="hero">
+			<div class="hero-descrip">
+				<h3>Beautiful Of Merapi</h3>
+				<p>Mount Merapi is definitely an amazing sight to see. The volcano experienced a huge eruption last October and you can clearly see the destruction left by the ash and mud flows. The ground is covered in grey ash and mud and is surrounded by beautiful,
+				</p>
+			</div>
+			<div class="hero-image">
+				<img src="img/g.jpg" width="350px">
+			</div>
 		</div>
+		</hr>
 
-		<aside class="Profil">
-			
-		</aside>
-	</content>
-
-
-
-	
-
-
+		<div class="content">
+			<div class="main card" id="main">
+				<h2>Galery Of Merapi</h2>
+				<div class="flex-container">
+					<div class="box">
+						<img src="img/1.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/2.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/3.jpg" alt="Profile" style="width: 100%;">
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="box">
+						<img src="img/4.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/5.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/6.jpg" alt="Profile" style="width: 100%;">
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="box">
+						<img src="img/1.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/2.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/3.jpg" alt="Profile" style="width: 100%;">
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="box">
+						<img src="img/4.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/5.jpg" alt="Profile" style="width: 100%;">
+					</div>
+					<div class="box">
+						<img src="img/6.jpg" alt="Profile" style="width: 100%;">
+					</div>
+				</div>
+			</div>
+			<div class="profile">
+				<img src="img/pic.jpg" alt="Profile" style="width: 100%;">
+				<div class="profile-body">
+					<h2><b>Agung Purnomo</b></h2>
+					<p>Tarub 02/02 Sembungan Nogosari Boyolali</p>
+				</div>
+				<p><button onclick="contact()">Contact</button></p>		
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<h3><b>Agung Purnomo © 2020</b></h3>
+		</div>	
+	</div>
 </body>
+<script src="js/js.js"></script>
 </html>

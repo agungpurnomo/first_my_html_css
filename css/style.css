@@ -6,15 +6,29 @@
 
 
 
+.container{
+	width: 1400px;
+	font-family: Roboto;
+	margin: auto;
+	overflow: auto;
+}
+
 
 .navbar {
+	width: 100%;
+	height: 80px;
+	background-color: #139B5B;
+	position: fixed;
+}
+
+.navbar-space {
+	width: 100%;
 	height: 80px;
 	background-color: #139B5B;
 }
-
 .navbar-logo {
 	float:left;
-	padding: 10px 10px 10px 30px
+	padding: 10px 20px 10px 30px
 }
 
 .navbar-menu {
@@ -26,26 +40,42 @@
 .navbar-menu ul li {
 	display: inline-block;
 	font-family: Roboto;
-	padding: 30px 20px;
+	font-size: 20px;
+	padding: 30px 10px;
+	cursor: pointer;
+}
+
+.navbar-menu a{
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-menu li:hover{
+	opacity: 0.7;
 }
 
 .hero {
-	height: 300px;
-	background-color: #FFFFFF;
-	padding : 20px 10px;
+	height: 350px;
+	background-color: #F6F6F6;
 }
 
 .hero .hero-descrip {
 	width: 50%;
-	height: 200px;
+	height: 250px;
 	float: left;
 	padding: 20px 20px 20px 20px;
 	font-family: Roboto;
 	text-align: center;
+	color: #5C5D55;
+}
+
+.hero .hero-descrip h3 {
+	font-size: 50px;
+	color: black;
 }
 
 .hero .hero-descrip p {
-	padding-top: 20px;
+	padding: 20px 20px 10px 80px;
 	font-family: Roboto;
 	font-weight: normal;
 	text-align: left;
@@ -53,36 +83,115 @@
 	margin-bottom: 20px;
 }
 
-
-.hero-descrip .button {
-	background-color: #3F92F6;
-	width: 50px;
-	height: 30px;
-	color: white;
-	font-family: Roboto;
-	font-size: 20px;
-	margin-top: 20px;
-	padding: 10px 20px 20px 10px;
-	border-style: none;
-	border-radius: 5px;
-	text-align: center;
-}
-
 .hero .hero-image {
 	width: 50%;
 	float: right;
+	padding: 20px;
 }
 
-.content{
-	width: 960px;
-	border: 1px solid;
-	clear: both;
+.content {
+	margin-top : 20px;
+	margin-bottom: 30px;
+	overflow: auto;
+	padding: 5px 5px ;
 }
 
-.content .main {
-	width: 600px;
-	background-color: #000FAF;
+.content h2 {
+	padding: 12px 18px;
+}
+.card {
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	transition: 0.3s;
+ }
+
+
+.main {
+	width: 1000px;
+	height: auto;
 	float: left;
+}
+
+.main .card {
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	transition: 0.3s;
+ }
+
+.profile {
+	width: 380px;
+	height: auto;
+	float: right;
+	color: #5C5D55;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 5px 5px 5px 5px;
+}
+
+.profile .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+	border-radius: 5px 5px 5px;
+}
+
+.profile h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+
+.profile .profile-body{
+	padding: 10px 20px;
+	text-align: center;
+}
+
+button {
+	border: none;
+	outline:0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #5C5D55;;
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+	width: 100%;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+.flex-container {
+	display: flex;
+	margin-left: 10px;
+	width: 980px;
+	height: 200px;
+	border-radius: 5px;
+	padding: 10px 3px;
+}
+
+.box {
+	flex-grow: 1;
+	background-color: wheat;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.box img {
+	border-radius: 5px 5px 5px 5px;
+	height: 170px;
+}
+
+.footer {
+	height: 100px;
+	background-color: #F6F6F6;
+	padding: 38px;
+	color: #5C5D55;
 }
 
 
