@@ -9,15 +9,15 @@
 <body>	
 	<header>
 		<div class="container">
-		<div class="header-logo">
-			<img src="img/mountain.png" width="50px">
-		</div>
-		
-		<div class="header-menu">
-			<ul>
-				<li><a  href="#main">Galeri</a></li>
-			</ul>
-		</div>
+			<div class="header-logo">
+				<img src="img/mountain.png" width="50px">
+			</div>
+			
+			<div class="header-menu">
+				<ul>
+					<li><a  href="#main">Galeri</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	
@@ -39,37 +39,68 @@
 			<div class="content">
 				<article>
 					<div class="card">
-						<h2>Galery Of Merapi</h2>
+						<h2>Jalur Pendakaian Gunung Merapi : Via Selo</h2>
 						<div class="flex-container">
-							<div class="box">
-								
+							<div class="box first">
+								<img src="img/basecamp.jpg">
 							</div>
-							<div class="box">
-								
+							<div class="box second">
+								<h5>Basecamp – New Selo</h5>
+								<p>Dari basecamp Sobat Pesona akan jalan menanjak jalanan aspal menuju shelter New Selo. New Selo adalah tempat penanda masuk Taman Nasional Gunung Merapi. Di tempat ini Sobat Pesona masih akan menemui warung-warung makanan</p>
 							</div>
 						</div>
 						<div class="flex-container">
-							<div class="box">
-								
+							<div class="box first">
+								<img src="img/pos1.jpg">
 							</div>
-							<div class="box">
-								
-							</div>
-						</div>
-						<div class="flex-container">
-							<div class="box">
-								
-							</div>
-							<div class="box">
-								
+							<div class="box second">
+								<h5>New Selo – Pos I (2-3jam)</h5>
+								<p>Dari perjalanan ke Pos 1 Sobat Pesona akan bertemu dengan shelter atau tempat istirahat. Trek Merapi di awal adalah perkebunan lalu kemudian Sobat Pesona akan melewati jalan berbatu-batu besar.</p>
 							</div>
 						</div>
 						<div class="flex-container">
-							<div class="box">
-								
+							<div class="box first">
+								<img src="img/pos2.jpg">
 							</div>
-							<div class="box">
-								
+							<div class="box second">
+								<h5>Pos I – Pos II (1-2jam)</h5>
+								<p>Jalur selanjutnya Sobat Pesona akan merasakan trek yang lebih ekstrim lagi. Sobat Pesona akan berada di lahan gersang berbatu dengan pohon-pohon kecil. Banyak sekali jurang-jurang di situlah Sobat Pesona harus waspada.</p>
+							</div>
+						</div>
+						<div class="flex-container">
+							<div class="box first">
+								<img src="img/watugajah.jpg">
+							</div>
+							<div class="box second">
+								<h5>Pos II – Watu Gajah (1jam)</h5>
+								<p>Inilah Watu Gajah. Dari Pos 2 menuju Watu Gajah treknya juga ekstrim. Namun, tenang saja semuanya pasti bisa dilalui. Watu Gajah ini ada sebuah batu yang besar dan beberapa pohon kecil rimbun. Nah, di sinilah Sobat Pesona bisa mendirikan tenda. Ini merupakan pilihan kedua para pendaki untuk beristirahat dan mendirikan tenda.</p>
+							</div>
+						</div>
+						<div class="flex-container">
+							<div class="box first">
+								<img src="img/pasarbubrah.jpg">
+							</div>
+							<div class="box second">
+								<h5>Watu Gajah – Pasar Bubrah (30 menit)</h5>
+								<p>Inilah tenda-tenda yang didirikan di Pasar Bubrah. Dari Watu Gajah terus jalurnya agak datar. Hanya diperlukan waktu sebentar untuk sampai ke Pasar Bubrah. Di Pasar Bubrah tidak ada pohon sama sekali, hanya lapangan batu krikil membentang.Di Pasar Bubrah ini juga berdiri tower alarm penanda kalau ada gempa lokal. Jika gunung Merapi beraksi dengan adanya dentuman-dentuman maka alarm tower akan berbunyi.</p>
+							</div>
+						</div>
+						<div class="flex-container">
+							<div class="box first">
+								<img src="img/pasarbubrah.jpg">
+							</div>
+							<div class="box second">
+								<h5>Pasar Bubrah – Puncak Merapi (1 jam)</h5>
+								<p>Dari Pasar Bubrah untuk menuju puncak Sobat Pesona akan melewati jalur super ekstrim, yaitu jalur pasir halus menanjak dengan kemiringan 45-50 derajat. Banyak pendaki bilang kalau jalur ini lebih ekstrim ketimbang jalur menuju Mahameru.</p>
+							</div>
+						</div>
+						<div class="flex-container">
+							<div class="box first">
+								<img src="img/puncak.jpg">
+							</div>
+							<div class="box second">
+								<h5>Puncak Merapi</h5>
+								<p>Dulu sebelum adanya letusan hebat 2010 silam, puncak ini diberi nama puncak Garuda. Namun, setelah letusan itu puncak ini hanya menyisakan batuan saja. Dari puncak ini, Sobat Pesona akan menikmati pemandangan langit yang super indah, tapi jika tidak terhalang kabut ya.</p>
 							</div>
 						</div>
 					</div>
@@ -78,10 +109,15 @@
 				<aside>
 					<img src="img/1.jpg" alt="Profile" style="width: 100%;">
 					<div class="aside-body">
-						<h2><b>Merapi</b></h2>
-						<p></p>
+						<h2><b>Gunung Merapi</b></h2>
+						<button id="btn_detail" onclick="detailProfile()"><b>Detail Profile</b></button>
 					</div>
-					<p><button onclick="contact()">Contact</button></p>		
+					<p class="loader"><p>
+					<div class="aside-body" id="detail_id" style="display: none;">
+						<p><b>Gunung Merapi</b> (ketinggian puncak 2.930 mdpl, per 2010) adalah gunung berapi di bagian tengah Pulau Jawa dan merupakan salah satu gunung api teraktif di Indonesia. Lereng sisi selatan berada dalam administrasi Kabupaten Sleman, Daerah Istimewa Yogyakarta, dan sisanya berada dalam wilayah Provinsi Jawa Tengah, yaitu Kabupaten Magelang di sisi barat, Kabupaten Boyolali di sisi utara dan timur, serta Kabupaten Klaten di sisi tenggara. Kawasan hutan di sekitar puncaknya menjadi kawasan Taman Nasional Gunung Merapi sejak tahun 2004.</p>
+
+						<p>Gunung ini sangat berbahaya karena menurut catatan modern mengalami erupsi setiap dua sampai lima tahun sekali dan dikelilingi oleh permukiman yang sangat padat. Sejak tahun 1548, gunung ini sudah meletus sebanyak 68 kali.[butuh rujukan] Kota Magelang dan Kota Yogyakarta adalah kota besar terdekat, berjarak kurang dari 30 km dari puncaknya. Di lerengnya masih terdapat permukiman sampai ketinggian 1700 m dan hanya berjarak empat kilometer dari puncak. Oleh karena tingkat kepentingannya ini, Merapi menjadi salah satu dari enam belas gunung api dunia yang termasuk dalam proyek Gunung Api </p>
+					</div>		
 				</aside>
 			</div>
 		</div>
